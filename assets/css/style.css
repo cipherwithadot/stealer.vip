@@ -47,19 +47,18 @@ html {
 	height: 100%;
 }
 
-#ntyfront {
-	padding: -80px;
-	width: 750px;
-	height: 450px;
+#zoomm {
 	transition: transform .5s;
+	display: inline-block;
+	overflow: hidden;
+	padding: 10px;
 }
 
-#ntyfront {
-	position: absolute;
-}
-
-#ntyfront:hover {
+#zoomm:hover {
 	transform: scale(1.1);
+	display: inline-block;
+	overflow: hidden;
+	padding: 10px;
 }
 
 #badge {
