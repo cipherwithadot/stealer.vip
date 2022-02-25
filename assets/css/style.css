@@ -1439,7 +1439,7 @@ section {
 }
 
 .navbar-toggle {
-	border-color: #222222;
+	border-color: #3498db;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	border-radius: 0;
@@ -2002,7 +2002,7 @@ section {
 	}
 
 	.navbar-toggle .icon-bar {
-		background-color: #222222;
+		background-color: #3498db;
 	}
 
 	.header-fixed .navbar.affix .navbar-nav>li>a {
@@ -2020,11 +2020,10 @@ section {
 
 	.navbar-nav {
 		margin: 0;
-		border-bottom: 1px solid rgba(40, 40, 40, 0.1);
 	}
 
 	.navbar-toggle {
-		border-color: #222222;
+		border-color: #3498db;
 		-moz-border-radius: 0;
 		-webkit-border-radius: 0;
 		border-radius: 0;
@@ -2039,7 +2038,6 @@ section {
 
 	.container>.navbar-collapse {
 		width: 100%;
-		background-color: #222222;
 		margin-right: 0;
 		margin-left: 0;
 	}
@@ -2090,7 +2088,7 @@ section {
 	}
 
 	.navbar-toggle {
-		border-color: #222222;
+		border-color: #3498db;
 		-moz-border-radius: 0;
 		-webkit-border-radius: 0;
 		border-radius: 0;
@@ -2099,7 +2097,7 @@ section {
 	}
 
 	.navbar-toggle .icon-bar {
-		background-color: #222222;
+		background-color: #3498db;
 	}
 
 	.navbar-fixed-top .navbar-collapse {
@@ -2141,14 +2139,14 @@ section {
 
 	.navbar-nav>li>a {
 		line-height: 36px !important;
-		color: #222222 !important;
+		color: #34abe0 !important;
 		padding-right: 0;
 		padding-left: 0;
 		padding-top: 0;
 	}
 
 	.navbar-toggle .icon-bar {
-		background-color: #222222;
+		background-color: #3498db;
 	}
 
 	.navbar-nav>li:after {
@@ -2345,7 +2343,7 @@ section {
 }
 
 .testimonial-panel:hover {
-	background-color: #2b2928;
+	background-color: #3498db;
 	cursor: pointer;
 }
 
@@ -3309,13 +3307,13 @@ body.page-dark {
 .navbar-toggle .icon-bar,
 .page-dark .testimonial-panel:hover,
 .testimonial-panel:hover {
-	background-color: #222222;
+	background-color: #3498db;
 
 }
 
 .feature-left-circle .feature-panel:hover .feature--icon {
-	background-color: #222222;
-	border-color: #222222;
+	background-color: #3498db;
+	border-color: #3498db;
 }
 
 a,
@@ -3326,8 +3324,8 @@ a,
 .portfolio-filter li a:hover,
 
 .feature-left-circle .feature--icon {
-	color: #222222;
-	border-color: #222222;
+	color: #3498db;
+	border-color: #3498db;
 }
 
 .blackfriday {
