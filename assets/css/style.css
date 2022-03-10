@@ -47,6 +47,31 @@ html {
 	height: 100%;
 }
 
+#buttonn {
+	display: inline-block;
+	overflow: hidden;
+	padding: 10px;
+	border-width: 2px;
+	border-color: #4285f4;
+	color: #fff;
+	position: relative;
+	top: 0;
+	-webkit-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+	-webkit-box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+	box-shadow: 0 4px 20px -5px rgb(66 133 244 / 80%)
+}
+
+#buttonn:hover {
+  transform: scale(1.1);
+  /*background: #4285f4;*/
+  border-color: #4285f4;
+  color: #fff;
+  -webkit-box-shadow: 0 5px 30px -5px rgba(66, 133, 244, 0.7) !important;
+  box-shadow: 0 5px 30px -5px rgba(66, 133, 244, 0.7) !important;
+}
+
 #zoomm {
 	transition: transform .5s;
 	display: inline-block;
@@ -59,6 +84,103 @@ html {
 	display: inline-block;
 	overflow: hidden;
 	padding: 10px;
+}
+
+/* Particles
+#particles_js {
+
+    -webkit-animation: fadeInLeft 1s;
+
+    position: absolute;
+    width: 100%;
+    
+    top: 0px;
+
+}
+
+.orbiting-lines {
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 1000px;
+  margin: 0 auto;
+  min-width: 785px;
+
+  overflow: hidden;
+
+}*/
+
+.spinner-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36 36 36);
+	/*backdrop-filter: saturate(180%) blur(50px);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.spinner {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+}
+
+.spinner::before,
+.spinner:after{
+    content: "";
+    position: absolute;
+    border-radius: 80%;
+}
+
+.spinner:before {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(90deg, #3498db 0%,#007bff 100% );
+    animation: spin .5s infinite linear;
+}
+.spinner:after {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(36 36 36 / 99%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+
+}*/
+
+
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 3em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #007bff;
 }
 
 #badge {
@@ -93,7 +215,7 @@ html {
 	 font-weight: 400;
 	 line-height: 45px;
 	 margin: 0 0 2em;
-	 max-width: 160px;
+	 max-width: 150px;
 	 position: relative;
 	 text-decoration: none;
 	 text-transform: uppercase;
@@ -459,8 +581,8 @@ ul {
 }
 
 section {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 96px;
+	padding-bottom: 50px;
 	overflow: hidden;
 }
 
@@ -1151,18 +1273,13 @@ section {
 	z-index: -1;
 }
 
-.bg-overlay-light:before {
-	background-color: #ffffff;
-	opacity: 0.8;
-}
-
 .bg-overlay-dark:before {
-	background-color: #222222;
-	opacity: 0.9;
+	background-color: rgb(36 36 36 / 90%);
+	backdrop-filter: saturate(180%) blur(5px);
 }
 
 .bg-overlay-theme:before {
-	background-color: #3498db;
+	background-color: #1d1d1d;
 	opacity: 0.5;
 }
 
@@ -1549,7 +1666,6 @@ section {
 	cursor: pointer;
 }
 
-
 /*------------------------------------*\
     #Heading
 \*------------------------------------*/
@@ -1564,11 +1680,12 @@ section {
 }
 
 .heading .heading--desc {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 24px;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 18px;
 	margin-bottom: 0;
 	padding: 0 30px;
+	font-family: 'Varela Round';
 }
 
 /* Custom, iPhone Retina */
@@ -1752,6 +1869,7 @@ section {
 	-ms-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.09);
 	box-shadow: 0 1px 3px rgba(255, 255, 255, 0.09);
 	display: block;
+	backdrop-filter: saturate(180%) blur(5px);
 }
 
 .header-fixed:not(.header-light) .navbar .logo-dark {
@@ -2649,8 +2767,8 @@ section {
 \*------------------------------------*/
 .footer {
 	background-color: #ffffff;
-	padding-top: 33px;
-	padding-bottom: 33px;
+	padding-top: 20px;
+	padding-bottom: 5px;
 }
 
 .footer--copyright {
@@ -3231,6 +3349,7 @@ body.page-dark {
 	-webkit-box-shadow: 0 2px 3px rgba(40, 40, 40, 0.1);
 	box-shadow: 0 2px 3px rgba(40, 40, 40, 0.1);
 	background-color: #1d1d1d;
+	border-radius: 12px;
 }
 
 .page-dark .form-control,
