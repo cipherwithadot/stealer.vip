@@ -9,7 +9,7 @@ Flashbyte and Clash are just really sus when it comes to communication and when 
   
  <br>
   
-  Fun Fact: This website is not made by me completly and most of it comes from https://nighty.one (They told me to do it)<br><br>
+  <h3>Fun Fact:</h3> This website is not made by me completly and most of it comes from https://nighty.one (They told me to do it)<br><br>
   
   <br>
   
